@@ -1,0 +1,14 @@
+When it comes to drf application we need to follow some certain steps to handle backend and frontend
+1.  **Backend** : We will use Django Rest Framework to create API endpoints. We will create models, serializers, views,url,test api at browser level
+2.  **Frontend** : We will use React to create frontend application. 
+
+
+
+Create method in serializer:
+Create method in serializer it take self and validated data why the validate data this mean the serializer automatically validate the data and pass it to create method.
+
+
+**validate_user means whatever the data present in serializer field will be pass to the create_super method
+
+
+CreateAPIView:-It is used to create the objects in database
