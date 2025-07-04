@@ -12,3 +12,9 @@ Create method in serializer it take self and validated data why the validate dat
 
 
 CreateAPIView:-It is used to create the objects in database
+
+
+To send the api request to server we use  axios 
+
+
+CORS(Cross Origin Resource sharing)-it's a web security feature which stops the one web from asking the data from different website without permission
