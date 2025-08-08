@@ -1,0 +1,21 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: blueviolet;
+}
+
+.bg-light-dark{
+    background-color: white;
+}
+
+#root{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.container{
+    padding-top: 12vh;
+}
+.btn-dark:hover{
+    background-color: green;
+}
