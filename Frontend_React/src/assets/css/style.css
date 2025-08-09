@@ -1,21 +1,53 @@
-body{
+body {
     font-family: 'Poppins', sans-serif;
     background-color: blueviolet;
 }
 
-.bg-light-dark{
+.bg-light-dark {
     background-color: white;
 }
 
-#root{
+#root {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 50vh;
 }
 
-.container{
+
+
+.container {
+    
     padding-top: 12vh;
 }
-.btn-dark:hover{
+
+.btn-dark:hover {
     background-color: green;
+}
+
+.footer{
+    padding-top: 25vh;
+}
+
+.bg-purple {
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+}
+
+.register-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  max-width: 400px;
+  width: 100%;
+  
+}
+
+.btn-light-purple {
+  background-color: #a855f7;
+  color: white;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.btn-light-purple:hover {
+  background-color: #9333ea;
+  transform: scale(1.03);
 }

@@ -3,9 +3,12 @@ import Button from './Button'
 
 
 
+
+
 const Main = () => {
   return (
   <>
+  
   <div className='container'>
     <div className='p-5 text-center bg-light-dark rounded'>
      <h1 style={{ color: 'blueviolet', fontWeight: 'bold', fontSize: '24px', margin: 0 }}>
@@ -16,6 +19,7 @@ const Main = () => {
         <Button text="login" class=" btn-dark"/>
     </div>
   </div>
+  
   </>
   )
 }

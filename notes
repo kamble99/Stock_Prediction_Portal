@@ -1,1 +1,7 @@
 CreateApiViews=  it is used for creating objects in database
+
+
+axios library:-it is used to send data to backend from frontend
+
+CORS:-Cross origin resource sharing its web security process which stop one website by asking data from different website without permission
+

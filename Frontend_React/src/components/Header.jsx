@@ -1,6 +1,7 @@
 import React from 'react';
 import predicted from '../assets/Images/predictive-chart.png';
 import Button from './Button';
+import {Link} from 'react-router-dom';
 
 const Header = () => {
   return (
@@ -19,22 +20,16 @@ const Header = () => {
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <a href="">
-          <img
-            src={predicted}
-            alt="Predictive Chart"
-            style={{ height: '55px', marginRight: '12px' }}
-          />
-        </a>
+        <Link to={"/"}><img src={predicted} alt="Predictive Chart"style={{ height: '55px', marginRight: '12px' }}/></Link>
         <h1 style={{ color: 'blueviolet', fontWeight: 'bold', fontSize: '24px', margin: 0 }}>
           Stock Prediction Portal
         </h1>
       </div>
 
       <div>
-        <Button text='login' class="btn-dark"/>
+        <Button text='login' class="btn-dark" url='/login'/>
         &nbsp;
-        <Button text='Register' class="  btn-dark" />
+        <Button text='Register' class="  btn-dark" url='/register' />
         
       </div>
     </nav>
