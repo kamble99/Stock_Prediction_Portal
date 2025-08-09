@@ -1,9 +1,20 @@
-import React from 'react';
+import {useContext} from 'react';
 import predicted from '../assets/Images/predictive-chart.png';
 import Button from './Button';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
+import { AuthContext } from '../authProvider';
 
 const Header = () => {
+  const {isloggedin,setisloggedin}=useContext(AuthContext)
+  const navigate=useNavigate();
+  const handlelogout=(e)=>{
+    localStorage.removeItem('accessToken')
+    localStorage.removeItem('refreshToken')
+    setisloggedin(false)
+    console.log('logged out')
+    navigate('/login')
+    
+  }
   return (
     <nav
       className="navbar-container"
@@ -27,10 +38,17 @@ const Header = () => {
       </div>
 
       <div>
-        <Button text='login' class="btn-dark" url='/login'/>
+        {isloggedin ? (
+          <button onClick={handlelogout} className='btn-danger rounded' >logout</button>
+        ):(
+          <>
+        <Button text='login' class="btn-dark rounded" url='/login'/>
         &nbsp;
-        <Button text='Register' class="  btn-dark" url='/register' />
+        <Button text='Register' class="  btn-dark rounded" url='/register' />
         
+          </>
+        )}
+       
       </div>
     </nav>
   );

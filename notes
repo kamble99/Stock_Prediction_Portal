@@ -5,3 +5,4 @@ axios library:-it is used to send data to backend from frontend
 
 CORS:-Cross origin resource sharing its web security process which stop one website by asking data from different website without permission
 
+Simplejwt:- The work jwt is to when login it generate access token and refresh token when login the system,when the access token is expired reacts gets  the error from the backend which is 401 unauthorized status which means access the invalid or expired 
