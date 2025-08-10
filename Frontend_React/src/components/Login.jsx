@@ -27,7 +27,7 @@ const Login = () => {
       localStorage.setItem('refreshToken', response.data.refresh);
       console.log('Login successful');
       setisloggedin(true);
-      navigate('/');
+      navigate('/dashbaord');
     } catch (error) {
       console.error('Invalid credentials');
       setError('Invalid credentials');

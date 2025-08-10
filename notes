@@ -6,3 +6,13 @@ axios library:-it is used to send data to backend from frontend
 CORS:-Cross origin resource sharing its web security process which stop one website by asking data from different website without permission
 
 Simplejwt:- The work jwt is to when login it generate access token and refresh token when login the system,when the access token is expired reacts gets  the error from the backend which is 401 unauthorized status which means access the invalid or expired 
+
+Axios Interceptor:- Interceptor are feature that allows you to modify request and response before they are 
+handled by the success handler or error handler.
+
+There are two type of Interceptor:
+
+request Interceptor: Request Intrceptor are used to modify requets before they are sent to the server
+
+response Interceptor:Response interceptor are used to handle response before they reach your then or catch methods.(success handler or error handler)
+

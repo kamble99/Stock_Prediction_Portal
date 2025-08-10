@@ -16,7 +16,7 @@ const Main = () => {
         </h1>
         &nbsp;
         <p className='lead' style={{color:'black'}}>A Stock Prediction Portal built with Django (backend) and React (frontend) that allows users to view, analyze, and predict stock trends using historical data and machine learning models. The platform provides interactive charts, user authentication, and real-time updates for an intuitive and responsive experience.</p>
-        <Button text="login" class=" btn-dark" url={'/login'}/>
+        <Button text="Explore" class=" btn-dark"  url="/dashboard"/>
     </div>
   </div>
   
