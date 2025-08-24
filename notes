@@ -16,3 +16,15 @@ request Interceptor: Request Intrceptor are used to modify requets before they a
 
 response Interceptor:Response interceptor are used to handle response before they reach your then or catch methods.(success handler or error handler)
 
+Implementing Machine learning
+
+1.Data collection
+2.Data Exploration and Visualization
+3.Feature Engineering
+4.Data Preprocessing
+5.Sequence creation
+6.Model Building
+7.Model training
+8.Preparing Test Data
+9.Making prediction
+10.Model evalution
