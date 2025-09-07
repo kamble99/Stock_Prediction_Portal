@@ -1,19 +1,19 @@
-import {useContext} from 'react';
+import { useContext } from 'react';
 import predicted from '../assets/Images/predictive-chart.png';
 import Button from './Button';
-import {Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../authProvider';
 
 const Header = () => {
-  const {isloggedin,setisloggedin}=useContext(AuthContext)
-  const navigate=useNavigate();
-  const handlelogout=(e)=>{
+  const { isloggedin, setisloggedin } = useContext(AuthContext)
+  const navigate = useNavigate();
+  const handlelogout = (e) => {
     localStorage.removeItem('accessToken')
     localStorage.removeItem('refreshToken')
     setisloggedin(false)
     console.log('logged out')
     navigate('/login')
-    
+
   }
   return (
     <nav
@@ -31,7 +31,7 @@ const Header = () => {
       }}
     >
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <Link to={"/"}><img src={predicted} alt="Predictive Chart"style={{ height: '55px', marginRight: '12px' }}/></Link>
+        <Link to={"/"}><img src={predicted} alt="Predictive Chart" style={{ height: '55px', marginRight: '12px' }} /></Link>
         <h1 style={{ color: 'blueviolet', fontWeight: 'bold', fontSize: '24px', margin: 0 }}>
           Stock Prediction Portal
         </h1>
@@ -40,20 +40,19 @@ const Header = () => {
       <div>
         {isloggedin ? (
           <>
-           <Button text='Dashboard' class="btn-dark rounded rounded" url='/Dashboard'/>
-           &nbsp;
-           <button onClick={handlelogout} className='btn-danger rounded' >logout</button>
-      
+            < Button text="Dashbaord" class="btn-dark rounded " url='/Dashboard' />
+            &nbsp;
+            <button onClick={handlelogout} className='btn-danger rounded' >logout</button>
+
           </>
-        ):(
+        ) : (
           <>
-        <Button text='login' class="btn-dark rounded" url='/login'/>
-        &nbsp;
-        <Button text='Register' class="  btn-dark rounded" url='/register' />
-        
+            <Button text="Dashboard" class="btn-dark rounded" url="/Dashboard" />
+            &nbsp;
+            <Button text="Logout" class="btn-danger rounded" onClick={handlelogout} />
           </>
         )}
-       
+
       </div>
     </nav>
   );
